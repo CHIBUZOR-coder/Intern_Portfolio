@@ -751,6 +751,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -2067,6 +2071,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2659,6 +2668,61 @@ video {
   margin-left: -5px;
 }
 
+.home_image {
+  background: url(images/girl1.jpg) center center/ cover;
+}
+
+.profile_pics {
+  background: url(images/girl3.jpg) center center/ cover;
+}
+
+.slide_element {
+  font-weight: 700;
+}
+
+.link {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 9999px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .link {
+    height: 3.5rem;
+    width: 6rem;
+  }
+}
+
+.link {
+  border: 2px solid #787878;
+  color: #787878;
+}
+
+/* styles for portfolio and service */
+
+/*  Portfolio personal styling*/
+
+.h_lines {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
 .show {
   position: relative;
   height: 7rem;
@@ -2773,39 +2837,6 @@ video {
   padding-left: 2px;
 }
 
-.link {
-  height: 2rem;
-  width: 6rem;
-  border-radius: 9999px;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .link {
-    height: 3.5rem;
-    width: 6rem;
-  }
-}
-
-.link {
-  border: 2px solid #787878;
-  color: #787878;
-}
-
 /* 
 .container{
     background-color: rgba(35, 31, 31, 0.4);
@@ -2846,10 +2877,6 @@ video {
     background: url(images/contech.jpg) center center/ cover;
 }*/
 
-.slide_element {
-  font-weight: 700;
-}
-
 .social {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2860,17 +2887,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.home_image {
-  background: url(images/girl1.jpg) center center/ cover;
-}
-
-.profile_pics {
-  background: url(images/girl3.jpg) center center/ cover;
-}
-
-.social {
   /* background-color: var(--color--grey-4); */
   display: flex;
   justify-content: center;
@@ -3360,9 +3376,9 @@ textarea {
     gap: 1rem;
   }
 
-  .md\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
+  .md\:gap-x-14 {
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
   }
 
   .md\:gap-x-8 {
@@ -3374,11 +3390,6 @@ textarea {
     row-gap: 0px;
   }
 
-  .md\:gap-x-14 {
-    -moz-column-gap: 3.5rem;
-         column-gap: 3.5rem;
-  }
-
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -3387,6 +3398,11 @@ textarea {
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .md\:pl-0 {

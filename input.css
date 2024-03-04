@@ -60,10 +60,55 @@
     margin-left: -5px;
 }
 
+
+.home_image {
+
+    background: url(images/girl1.jpg) center center/ cover;
+}
+
+.profile_pics {
+    background: url(images/girl3.jpg) center center/ cover;
+}
+
+
+.slide_element {
+    @apply font-bold
+}
+
+
+.link {
+    @apply rounded-full transition ease-in-out duration-1000 hover:scale-110 hover:bg-black hover:text-white w-24 h-8 md:w-24 md:h-14
+}
+
+.link {
+    border: 2px solid #787878;
+    color: #787878;
+
+}
+
+
+/* styles for portfolio and service */
+
+
+
+/*  Portfolio personal styling*/
+
+.h_lines{
+    @apply font-bold text-5xl
+}
+
+
+
+
+
+
+
+
+
+
 .show {
     @apply relative h-28 transition ease-in-out duration-700
 }
-
 .show_child {
     @apply relative h-28 w-full transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
 }
@@ -149,16 +194,6 @@
     padding-left: 2px;
 }
 
-.link {
-    @apply rounded-full transition ease-in-out duration-1000 hover:scale-110 hover:bg-black hover:text-white w-24 h-8 md:w-24 md:h-14
-}
-
-.link {
-    border: 2px solid #787878;
-    color: #787878;
-
-}
-
 /* 
 .container{
     background-color: rgba(35, 31, 31, 0.4);
@@ -198,22 +233,9 @@
     background: url(images/contech.jpg) center center/ cover;
 }*/
 
-.slide_element{
-    @apply font-bold
-}
 
 .social {
     @apply mx-4 h-7 w-7 transition ease-in-out duration-500
-}
-
-
-.home_image {
-
-    background: url(images/girl1.jpg) center center/ cover;
-}
-
-.profile_pics {
-    background: url(images/girl3.jpg) center center/ cover;
 }
 
 .social {
