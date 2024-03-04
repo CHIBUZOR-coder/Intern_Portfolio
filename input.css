@@ -198,6 +198,10 @@
     background: url(images/contech.jpg) center center/ cover;
 }*/
 
+.slide_element{
+    @apply font-bold
+}
+
 .social {
     @apply mx-4 h-7 w-7 transition ease-in-out duration-500
 }
