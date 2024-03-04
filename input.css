@@ -150,7 +150,7 @@
 }
 
 .link {
-    @apply rounded-full transition ease-in-out duration-1000 hover:scale-110 hover:bg-slate-700 w-24 h-8 md:w-24 md:h-14
+    @apply rounded-full transition ease-in-out duration-1000 hover:scale-110 hover:bg-black hover:text-white w-24 h-8 md:w-24 md:h-14
 }
 
 .link {
