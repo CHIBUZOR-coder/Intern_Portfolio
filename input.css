@@ -94,7 +94,14 @@
 /*  Portfolio personal styling*/
 
 .h_lines{
-    @apply font-bold text-5xl
+    @apply font-bold text-4xl
+}
+
+.catlink{
+    @apply hover:text-black
+}
+.activ{
+    @apply text-black
 }
 
 
@@ -103,11 +110,8 @@
 
 
 
-
-
-
 .show {
-    @apply relative h-28 transition ease-in-out duration-700
+    @apply relative  transition ease-in-out duration-700
 }
 .show_child {
     @apply relative h-28 w-full transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
