@@ -25,6 +25,11 @@ module.exports = {
         greyishWhite: "#f5f5f5",
         prim: "#777777",
         child1: "rgba(211,125,118,0.7)", // You can adjust the hex value as needed
+        child2: "rgba(209,94,84,0.7)",
+        child3: "rgba(216,96,76,0.7)",
+        child4: "rgba(227,76,63,0.7)",
+        child5: "rgba(187,73,58,0.7)",
+        child6: "rgba(198,72,73,0.7)",
       },
     },
   },

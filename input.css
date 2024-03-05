@@ -114,23 +114,21 @@
 } */
 
 .show {
-    @apply relative transition ease-in-out duration-700
+    @apply relative
 }
 
 .show_child {
-    @apply relative w-full transition ease-in-out h-full duration-700 hover:scale-110 flex justify-center items-center
+    @apply relative w-full h-full flex justify-center items-center
 }
 
 
 .show_child {
     border-radius: 2px;
     box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
-    ;
+
 }
 
-.more {
-    @apply hover:scale-110 transition ease-out duration-700
-}
+
 
 .Tcontainer {
     @apply pt-4
@@ -202,7 +200,9 @@
 
 
 
-
+.project {
+    @apply hover:scale-110 transition ease-in-out duration-700
+}
 
 .project {
     border: 2px solid var(--color--grey-5);
@@ -211,29 +211,24 @@
     position: relative;
 
 
-    transition: all 0.4s ease-in-out;
 
-    /* &:hover {
-            border: 2px solid var(--color--grey-2);
 
-            .picon {
-              
-                transition: all 0.3s ease-in-out;
 
-                .link {
-                    z-index: 1;
-                    transition: all 0.7s ease-in-out;
-                }
+    .source {
+        position: absolute;
 
-                .source {
-                    visibility: visible;
-                    transform: translateY(0);
-                    transition: all 0.7s ease-in-out;
-                }
-            }
-        } */
+        color: white;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color--grey-1);
+        top: 4rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
 
     .picon {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         position: relative;
         width: 100%;
         height: 100%;
@@ -242,18 +237,24 @@
         align-items: center;
         gap: 3rem;
 
-        .source {
-            position: absolute;
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-            top: 1rem;
-            transform: translateY(-150%);
-            visibility: hidden;
-            color: var(--color--grey-1);
-            font-weight: 800;
-            font-size: 1.5rem;
+        &:hover {
+
+            .source {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: var(--color--grey-1);
+
+                font-weight: 800;
+                font-size: 1.2rem;
+            }
+
         }
+
+
     }
 
     .link {
@@ -263,7 +264,6 @@
         width: 5px;
         position: relative;
         height: 5px;
-        /* margin: 0.5rem auto; */
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -282,8 +282,14 @@
     }
 }
 
+
+.source {
+    @apply transition ease-in-out duration-700
+}
+
+
 .picon {
-    @apply hover:bg-child1 transition ease-in-out duration-500
+    @apply transition ease-in-out duration-700
 }
 
 /* 

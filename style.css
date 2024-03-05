@@ -2086,6 +2086,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -2738,11 +2743,6 @@ video {
 
 .show {
   position: relative;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .show_child {
@@ -2752,37 +2752,8 @@ video {
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.show_child:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.show_child {
   border-radius: 2px;
   box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
-}
-
-.more {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.more:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .Tcontainer {
@@ -2838,31 +2809,37 @@ video {
 }
 
 .project {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.project {
   border: 2px solid var(--color--grey-5);
   box-shadow: var(--box--shadow-2);
   border-radius: 5px;
   position: relative;
-  transition: all 0.4s ease-in-out;
-  /* &:hover {
-            border: 2px solid var(--color--grey-2);
-
-            .picon {
-              
-                transition: all 0.3s ease-in-out;
-
-                .link {
-                    z-index: 1;
-                    transition: all 0.7s ease-in-out;
-                }
-
-                .source {
-                    visibility: visible;
-                    transform: translateY(0);
-                    transition: all 0.7s ease-in-out;
-                }
-            }
-        } */
+  .source {
+    position: absolute;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color--grey-1);
+    top: 4rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
   .picon {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
@@ -2870,17 +2847,18 @@ video {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    .source {
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      gap: 50px;
-      top: 1rem;
-      transform: translateY(-150%);
-      visibility: hidden;
-      color: var(--color--grey-1);
-      font-weight: 800;
-      font-size: 1.5rem;
+    &:hover {
+      .source {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color--grey-1);
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
     }
   }
   .link {
@@ -2890,7 +2868,6 @@ video {
     width: 5px;
     position: relative;
     height: 5px;
-    /* margin: 0.5rem auto; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -2907,16 +2884,20 @@ video {
   }
 }
 
+.source {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .picon {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 500ms;
+  transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.picon:hover {
-  background-color: rgba(211,125,118,0.7);
 }
 
 /* 
@@ -3338,6 +3319,30 @@ textarea {
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-child1:hover {
+  background-color: rgba(211,125,118,0.7);
+}
+
+.hover\:bg-child2:hover {
+  background-color: rgba(209,94,84,0.7);
+}
+
+.hover\:bg-child3:hover {
+  background-color: rgba(216,96,76,0.7);
+}
+
+.hover\:bg-child4:hover {
+  background-color: rgba(227,76,63,0.7);
+}
+
+.hover\:bg-child5:hover {
+  background-color: rgba(187,73,58,0.7);
+}
+
+.hover\:bg-child6:hover {
+  background-color: rgba(198,72,73,0.7);
 }
 
 .hover\:bg-green-400:hover {
