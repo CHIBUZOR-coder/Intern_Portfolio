@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       height: {
         big_h: "20rem",
-        ppa: "40vh",
+        ppa: "47vh",
+        grid: "735px",
       },
       margin: {
         ppaa: "180px",
@@ -14,7 +15,7 @@ module.exports = {
       width: {
         fat: "450px",
         sfat: "400px",
-        ssfat:"300px",
+        ssfat: "300px",
       },
       backgroundColor: {
         nav: " rgba(24, 22, 22, 0.9)  ",
@@ -22,7 +23,8 @@ module.exports = {
 
       colors: {
         greyishWhite: "#f5f5f5",
-        prim: "#777777", // You can adjust the hex value as needed
+        prim: "#777777",
+        child1: "rgba(211,125,118,0.7)", // You can adjust the hex value as needed
       },
     },
   },
