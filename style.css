@@ -661,6 +661,10 @@ video {
   isolation: auto;
 }
 
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -891,7 +895,7 @@ video {
 }
 
 .h-grid {
-  height: 735px;
+  height: 1100px;
 }
 
 .w-20 {
@@ -2066,6 +2070,11 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2084,11 +2093,6 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-5 {
