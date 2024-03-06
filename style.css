@@ -751,10 +751,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -1294,6 +1290,10 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -3227,8 +3227,12 @@ video {
 .gleekchild {
   top: 2.5rem;
   right: 2.5rem;
+  display: flex;
   height: 3rem;
   width: 11rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3243,6 +3247,14 @@ video {
 .compny {
   font-size: 1.125rem;
   line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hova {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));

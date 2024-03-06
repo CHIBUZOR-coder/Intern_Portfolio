@@ -578,7 +578,7 @@
 }
 
 .gleekchild{
-    @apply  top-10 right-10 w-44 h-12 bg-white rounded-full
+    @apply  top-10 right-10 w-44 h-12 bg-white rounded-full flex flex-col justify-center items-center
 }
 
 .geekcontent{
@@ -589,7 +589,9 @@
     @apply text-black font-bold text-lg
 }
 
-
+.hova{
+    @apply text-black font-bold text-sm
+}
 
 
 
