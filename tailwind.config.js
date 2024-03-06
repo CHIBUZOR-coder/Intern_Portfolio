@@ -11,6 +11,8 @@ module.exports = {
         grid3: "400px",
         smgrid: "3500px",
         smgrid2: "2200px",
+        smgrid3: "1300px",
+        contactl: "500px",
       },
       margin: {
         ppaa: "180px",
@@ -41,7 +43,8 @@ module.exports = {
         serve5: "rgb(226,165,153)",
         serve6: "rgb(113,95,105)",
         geek: "rgb(237,240,250)",
-        geekhover: "rgb(144,172,209)",
+        geekhover: "rgba(144,172,209,2)",
+        contact: "rgb(228,84,71)",
       },
     },
   },
