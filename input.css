@@ -225,7 +225,6 @@
 
 
 
-
 .project {
     @apply hover:scale-110 transition ease-in-out duration-700
 }
@@ -315,8 +314,23 @@
 
 
 .picon {
-    @apply transition ease-in-out duration-700
+    @apply transition ease-in-out duration-700 
 }
+
+.bigtext {
+    @apply font-bold flex justify-center items-center text-white
+}
+
+.serve{
+@apply flex flex-col justify-center items-center relative w-2/4 text-white
+}
+
+.describe{
+    @apply flex flex-col justify-center items-center
+}
+ 
+
+
 
 /* 
  
