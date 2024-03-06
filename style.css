@@ -661,8 +661,8 @@ video {
   isolation: auto;
 }
 
-.row-span-2 {
-  grid-row: span 2 / span 2;
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 
 .float-start {
@@ -895,7 +895,11 @@ video {
 }
 
 .h-grid {
-  height: 1100px;
+  height: 900px;
+}
+
+.h-smgrid {
+  height: 3500px;
 }
 
 .w-20 {
@@ -1470,6 +1474,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -2070,11 +2078,6 @@ video {
   padding-right: 0.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2088,6 +2091,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-1 {
@@ -2788,6 +2796,18 @@ video {
   background: url(images/box1.jpg) center center/ cover;
 }
 
+.child7 {
+  background: url(images/resrant1.jpg) center center/ cover;
+}
+
+.child8 {
+  background: url(images/abstract.jpg) center center/ cover;
+}
+
+.child9 {
+  background: url(images/house.jpg) center center/ cover;
+}
+
 .childd1 {
   background: url(images/webdev.jpg) center center/ cover;
 }
@@ -3388,6 +3408,10 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -3419,6 +3443,10 @@ textarea {
 
   .md\:h-28 {
     height: 7rem;
+  }
+
+  .md\:h-grid {
+    height: 900px;
   }
 
   .md\:h-ppa {
@@ -3473,6 +3501,11 @@ textarea {
 
   .md\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:px-4 {

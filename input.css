@@ -161,6 +161,35 @@
     background: url(images/box1.jpg) center center/ cover;
 }
 
+.child7 {
+    background: url(images/resrant1.jpg) center center/ cover;
+}
+
+.child8 {
+    background: url(images/abstract.jpg) center center/ cover;
+}
+
+.child9 {
+    background: url(images/house.jpg) center center/ cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .childd1 {
     background: url(images/webdev.jpg) center center/ cover;
@@ -187,9 +216,6 @@
 .childd6 {
     background: url(images/dataa.jpg) center center/ cover;
 }
-
-
-
 
 
 
@@ -711,6 +737,7 @@ textarea {
     }
 
 }
+
 
 .slieShow {
     box-shadow: var(--box--shadow-2);

@@ -6,7 +6,8 @@ module.exports = {
       height: {
         big_h: "20rem",
         ppa: "47vh",
-        grid: "1100px",
+        grid: "900px",
+        smgrid:"3500px",
       },
       margin: {
         ppaa: "180px",
