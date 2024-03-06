@@ -751,6 +751,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -894,12 +898,16 @@ video {
   height: 2rem;
 }
 
-.h-grid {
-  height: 900px;
+.h-grid3 {
+  height: 400px;
 }
 
 .h-smgrid {
   height: 3500px;
+}
+
+.h-smgrid2 {
+  height: 2200px;
 }
 
 .w-20 {
@@ -1288,10 +1296,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1494,6 +1498,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-1 {
@@ -2760,8 +2768,6 @@ video {
   color: #787878;
 }
 
-/* styles for portfolio and service */
-
 /*  Portfolio personal styling*/
 
 .h_lines {
@@ -2779,13 +2785,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
-/* 
-.show:hover {
-    background-color: rgba(255, 0, 0, 0.5);
-    z-index: 1;
-   
-} */
 
 .show {
   position: relative;
@@ -2840,30 +2839,6 @@ video {
 
 .child9 {
   background: url(images/house.jpg) center center/ cover;
-}
-
-.childd1 {
-  background: url(images/webdev.jpg) center center/ cover;
-}
-
-.childd2 {
-  background: url(images/app.jpg) center center/ cover;
-}
-
-.childd3 {
-  background: url(images/ai.jpg) center center/ cover;
-}
-
-.childd4 {
-  background: url(images/uiux1.jpg) center center/ cover;
-}
-
-.childd5 {
-  background: url(images/coin.jpg) center center/ cover;
-}
-
-.childd6 {
-  background: url(images/dataa.jpg) center center/ cover;
 }
 
 .project {
@@ -2958,6 +2933,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* styles for service */
+
 .bigtext {
   display: flex;
   align-items: center;
@@ -2985,57 +2962,15 @@ video {
   justify-content: center;
 }
 
-/* 
- 
-.home_con{
-    
-    background-color: blueviolet;
-   
-}  */
+.words {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .nl {
   padding-left: 2px;
 }
-
-/* 
-.container{
-    background-color: rgba(35, 31, 31, 0.4);
-} */
-
-/* 
-.home {
-    background: url(images/jpeg-optimizer_18429.jpg) center center/ cover;
-}
-
-.about {
-    background: url(images/aboutpics.jpg) center center/ cover;
-}
-
-.profile_pics {
-    background: url(images/young-man-with-hoodie_23-2147646522.jpg) center center/ cover;
-}
-
-.portfolio {
-    background: url(images/homepic.jpg) center center/ cover;
-
-}
-
-.Services {
-    background: url(images/option.jpg) center center/ cover;
-}
-
-.skills {
-    background: url(images/jpeg-op.jpg) center center/ cover;
-} 
-
-
-.timeline {
-    background: url(images/contech.jpg) center center/ cover;
-}
-
-.contact {
-    background: url(images/contech.jpg) center center/ cover;
-}*/
 
 .social {
   margin-left: 1rem;
@@ -3060,41 +2995,12 @@ video {
   }
 }
 
-/* 
-
-  .bl:hover {
-      border-radius: 5px;
-      box-shadow: var(--box--shadow-1);
-      transform: translateY(-10px);
-      transition: all 0.4s ease-in-out;
-      filter: grayscale(50%);
-      transform: scale(1.05);
-      z-index: 2;
-
-      #txt {
-          font-size: x-small;
-      }
-
-      .dropp {
-          transform: translateY(-5px);
-          z-index: 10;
-          font-weight: 900;
-          font-size: 1.3rem;
-          filter: grayscale(0);
-          visibility: visible;
-          transition: all 0.4s ease-in-out;
-      }
-  } */
+/* Styling for timeline */
 
 .progress {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* 
-.skill-con{
-    background-color: rgba(27, 27, 29, 0.1);
-} */
 
 .progress-container {
   position: relative;
@@ -3299,6 +3205,47 @@ video {
 .run {
   text-align: center;
   color: #333;
+}
+
+.geek {
+  position: relative;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 240 250 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.geek:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.gleekchild {
+  top: 2.5rem;
+  right: 2.5rem;
+  height: 3rem;
+  width: 11rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.geekcontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.compny {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 form {
@@ -3548,10 +3495,6 @@ textarea {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .md\:gap-4 {

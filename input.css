@@ -87,7 +87,7 @@
 }
 
 
-/* styles for portfolio and service */
+
 
 
 
@@ -106,12 +106,6 @@
 }
 
 
-/* 
-.show:hover {
-    background-color: rgba(255, 0, 0, 0.5);
-    z-index: 1;
-   
-} */
 
 .show {
     @apply relative
@@ -172,57 +166,6 @@
 .child9 {
     background: url(images/house.jpg) center center/ cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.childd1 {
-    background: url(images/webdev.jpg) center center/ cover;
-}
-
-.childd2 {
-    background: url(images/app.jpg) center center/ cover;
-}
-
-.childd3 {
-    background: url(images/ai.jpg) center center/ cover;
-
-}
-
-.childd4 {
-    background: url(images/uiux1.jpg) center center/ cover;
-}
-
-.childd5 {
-    background: url(images/coin.jpg) center center/ cover;
-}
-
-
-.childd6 {
-    background: url(images/dataa.jpg) center center/ cover;
-}
-
-
-
-
-
-
-
 
 
 .project {
@@ -317,6 +260,12 @@
     @apply transition ease-in-out duration-700 
 }
 
+
+
+
+
+
+/* styles for service */
 .bigtext {
     @apply font-bold flex justify-center items-center text-white
 }
@@ -329,59 +278,15 @@
     @apply flex flex-col justify-center items-center
 }
  
+.words{
+    @apply flex justify-center items-center
+}
 
 
-
-/* 
- 
-.home_con{
-    
-    background-color: blueviolet;
-   
-}  */
 
 .nl {
     padding-left: 2px;
 }
-
-/* 
-.container{
-    background-color: rgba(35, 31, 31, 0.4);
-} */
-/* 
-.home {
-    background: url(images/jpeg-optimizer_18429.jpg) center center/ cover;
-}
-
-.about {
-    background: url(images/aboutpics.jpg) center center/ cover;
-}
-
-.profile_pics {
-    background: url(images/young-man-with-hoodie_23-2147646522.jpg) center center/ cover;
-}
-
-.portfolio {
-    background: url(images/homepic.jpg) center center/ cover;
-
-}
-
-.Services {
-    background: url(images/option.jpg) center center/ cover;
-}
-
-.skills {
-    background: url(images/jpeg-op.jpg) center center/ cover;
-} 
-
-
-.timeline {
-    background: url(images/contech.jpg) center center/ cover;
-}
-
-.contact {
-    background: url(images/contech.jpg) center center/ cover;
-}*/
 
 
 .social {
@@ -408,41 +313,16 @@
 }
 
 
-/* 
 
-  .bl:hover {
-      border-radius: 5px;
-      box-shadow: var(--box--shadow-1);
-      transform: translateY(-10px);
-      transition: all 0.4s ease-in-out;
-      filter: grayscale(50%);
-      transform: scale(1.05);
-      z-index: 2;
 
-      #txt {
-          font-size: x-small;
-      }
 
-      .dropp {
-          transform: translateY(-5px);
-          z-index: 10;
-          font-weight: 900;
-          font-size: 1.3rem;
-          filter: grayscale(0);
-          visibility: visible;
-          transition: all 0.4s ease-in-out;
-      }
-  } */
-
+/* Styling for timeline */
 .progress {
     @apply ml-auto mr-auto
 }
 
 
-/* 
-.skill-con{
-    background-color: rgba(27, 27, 29, 0.1);
-} */
+
 .progress-container {
 
     position: relative;
@@ -689,6 +569,39 @@
     text-align: center;
     color: #333;
 }
+
+
+
+
+.geek{
+    @apply bg-geek hover:bg-gray-500 relative rounded-lg transition ease-in-out duration-700
+}
+
+.gleekchild{
+    @apply  top-10 right-10 w-44 h-12 bg-white rounded-full
+}
+
+.geekcontent{
+    @apply flex justify-between p-6
+}
+
+.compny{
+    @apply text-black font-bold text-lg
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 form {
 

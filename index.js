@@ -2,7 +2,7 @@ const box = document.querySelectorAll(".box");
 const txt = document.querySelectorAll(".txt");
 const nav_text = document.querySelectorAll(".nav_text");
 const nav_home = document.querySelector(".nav_home");
-console.log(nav_home)
+console.log(nav_home);
 const nav_about = document.querySelector(".nav_about");
 const nav_portfolio = document.querySelector(".nav_portfolio");
 const nav_service = document.querySelector(".nav_service");
@@ -23,6 +23,8 @@ const show = document.querySelectorAll(".show");
 const show_child = document.querySelectorAll(".show_child");
 const num = document.querySelectorAll(".num");
 const lan_num = document.querySelectorAll(".lan_num");
+const geek = document.querySelectorAll(".geek");
+
 
 hbtn.addEventListener("click", () => {
   if (nav_home.classList.contains("hidden")) {
@@ -33,66 +35,6 @@ hbtn.addEventListener("click", () => {
     nav_home.classList.remove("block");
   }
 });
-
-// abtn.addEventListener("click", () => {
-//   if (nav_about.classList.contains("hidden")) {
-//     nav_about.classList.remove("hidden");
-//     nav_about.classList.add("block");
-//   } else {
-//     nav_about.classList.add("hidden");
-//     nav_about.classList.remove("block");
-//   }
-// });
-
-// pbtn.addEventListener("click", () => {
-//   if (nav_portfolio.classList.contains("hidden")) {
-//     nav_portfolio.classList.remove("hidden");
-//     nav_portfolio.classList.add("block");
-//   } else {
-//     nav_portfolio.classList.add("hidden");
-//     nav_portfolio.classList.remove("block");
-//   }
-// });
-
-// sbtn.addEventListener("click", () => {
-//   if (nav_service.classList.contains("hidden")) {
-//     nav_service.classList.remove("hidden");
-//     nav_service.classList.add("block");
-//   } else {
-//     nav_service.classList.add("hidden");
-//     nav_service.classList.remove("block");
-//   }
-// });
-
-// skcbtn.addEventListener("click", () => {
-//   if (nav_skill.classList.contains("hidden")) {
-//     nav_skill.classList.remove("hidden");
-//     nav_skill.classList.add("block");
-//   } else {
-//     nav_skill.classList.add("hidden");
-//     nav_skill.classList.remove("block");
-//   }
-// });
-
-// tbtn.addEventListener("click", () => {
-//   if (nav_timeline.classList.contains("hidden")) {
-//     nav_timeline.classList.remove("hidden");
-//     nav_timeline.classList.add("block");
-//   } else {
-//     nav_timeline.classList.add("hidden");
-//     nav_timeline.classList.remove("block");
-//   }
-// });
-
-// cbtn.addEventListener("click", () => {
-//   if (nav_contact.classList.contains("hidden")) {
-//     nav_contact.classList.remove("hidden");
-//     nav_contact.classList.add("block");
-//   } else {
-//     nav_contact.classList.add("hidden");
-//     nav_contact.classList.remove("block");
-//   }
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
@@ -106,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Apply colors to the body's background
   body.style.background = "url(images/newbg.jpg) center center/ cover";
   body.style.color = textColor;
-
 
   for (let i = 0; i < lan_num.length; i++) {
     const currentValue = parseInt(lan_num[i].innerText); // Ensure the value is parsed as an integer
@@ -128,6 +69,30 @@ document.addEventListener("DOMContentLoaded", function () {
   //   box[i].style.backgroundColor = secondaryColor;
   // }
 
+for (let i = 0; i < geek.length; i++) {
+  geek[i].addEventListener("mouseover", () => {
+    // Find the .compny elements inside the currently hovered .geek
+    const compnyElements = geek[i].querySelectorAll(".compny");
+     const companyElements = geek[i].querySelectorAll(".company");
+
+    for (let j = 0; j < compnyElements.length; j++) {
+      compnyElements[j].style.color = "white";
+       companyElements[j].style.color = "white";
+    }
+  });
+
+  geek[i].addEventListener("mouseout", () => {
+    // Find the .compny elements inside the currently hovered .geek
+    const compnyElements = geek[i].querySelectorAll(".compny");
+      const companyElements = geek[i].querySelectorAll(".company");
+
+    for (let k = 0; k < compnyElements.length; k++) {
+      compnyElements[k].style.color = textColor;
+       companyElements[k].style.color = textColor;
+    }
+  });
+}
+
   for (let i = 0; i < btn.length; i++) {
     btn[i].style.color = primaryColor;
   }
@@ -147,17 +112,4 @@ document.addEventListener("DOMContentLoaded", function () {
       nav_text[i].style.color = textColor;
     });
   }
-
-  // for (let i = 0; i < txt.length; i++) {
-  //   txt[i].style.color = textColor;
-
-  //   // Add event listeners for txt elements
-  //   txt[i].addEventListener("mouseover", function () {
-  //     txt[i].style.color = activeColor;
-  //   });
-
-  //   txt[i].addEventListener("mouseout", function () {
-  //     txt[i].style.color = textColor;
-  //   });
-  // }
 });
