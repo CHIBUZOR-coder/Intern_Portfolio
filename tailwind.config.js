@@ -21,6 +21,7 @@ module.exports = {
       width: {
         fat: "450px",
         sfat: "400px",
+        smfat: "300px",
         ssfat: "300px",
       },
       backgroundColor: {

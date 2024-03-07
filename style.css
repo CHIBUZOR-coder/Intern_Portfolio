@@ -966,8 +966,8 @@ video {
   width: 100%;
 }
 
-.w-sfat {
-  width: 400px;
+.w-smfat {
+  width: 300px;
 }
 
 .flex-1 {
@@ -2813,6 +2813,11 @@ video {
   color: #787878;
 }
 
+/* 
+.picture{
+    box-shadow: var(--box--shadow-2);
+} */
+
 /*  Portfolio personal styling*/
 
 .h_lines {
@@ -3552,6 +3557,10 @@ textarea {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-sfat {
+    width: 400px;
   }
 
   .md\:grid-cols-2 {
