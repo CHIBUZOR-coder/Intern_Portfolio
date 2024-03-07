@@ -267,7 +267,7 @@
 
 /* styles for service */
 .bigtext {
-    @apply font-bold flex justify-center items-center text-white
+    @apply font-bold flex text-xl text-white
 }
 
 .serve {
@@ -279,7 +279,7 @@
 }
 
 .words {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center relative
 }
 
 
