@@ -2980,7 +2980,11 @@ video {
 /* styles for service */
 
 .bigtext {
+  position: relative;
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -2991,19 +2995,31 @@ video {
 .serve {
   position: relative;
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .describe {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .describe {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .words {

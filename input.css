@@ -270,15 +270,15 @@
 
 /* styles for service */
 .bigtext {
-    @apply font-bold flex text-xl text-white
+    @apply font-bold flex text-xl text-white relative w-full justify-center items-center relative
 }
 
 .serve {
-    @apply flex flex-col justify-center items-center relative w-2/4 text-white
+    @apply flex flex-col justify-center items-center relative w-full text-white text-sm relative
 }
 
 .describe {
-    @apply flex flex-col justify-center items-center
+    @apply flex flex-col justify-center items-center relative text-sm md:text-base
 }
 
 .words {
