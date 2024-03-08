@@ -709,6 +709,11 @@ video {
   clear: none;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -725,18 +730,6 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.ml-0 {
-  margin-left: 0px;
 }
 
 .ml-auto {
@@ -919,7 +912,7 @@ video {
 }
 
 .h-smgrid3 {
-  height: 1300px;
+  height: 1450px;
 }
 
 .w-2\/4 {
@@ -962,12 +955,12 @@ video {
   width: weird-and-invalid;
 }
 
-.w-full {
-  width: 100%;
+.w-auto {
+  width: auto;
 }
 
-.w-smfat {
-  width: 300px;
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
@@ -1536,6 +1529,11 @@ video {
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .gap-y-16 {
@@ -2149,18 +2147,9 @@ video {
      object-fit: scale-down;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -2178,9 +2167,9 @@ video {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .py-1 {
@@ -2826,6 +2815,11 @@ video {
   font-weight: 700;
 }
 
+.catlink {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .catlink:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3046,25 +3040,39 @@ video {
   }
 }
 
-/* Styling for timeline */
-
-.progress {
-  margin-left: auto;
-  margin-right: auto;
+.child11 {
+  background: url(images/communiction.jpg) center center/ cover;
 }
+
+.child22 {
+  background: url(images/gdesign.jpg) center center/ cover;
+}
+
+.child33 {
+  background: url(images/cunsalt.jpg) center center/ cover;
+}
+
+.child44 {
+  background: url(images/pmanage.jpg) center center/ cover;
+}
+
+.child55 {
+  background: url(images/appp.jpg) center center/ cover;
+}
+
+.child66 {
+  background: url(images/pdesign.jpg) center center/ cover;
+}
+
+/* Styling for timeline */
 
 .progress-container {
   position: relative;
-  width: 80%;
-  margin: 0 auto 50px auto;
-  gap: 15px;
-  z-index: 2;
+  /* background-color: blueviolet; */
+  width: 100%;
   .progress {
     display: flex;
     flex-direction: column;
-    z-index: 10;
-    position: relative;
-    width: 35%;
     .status-line {
       position: relative;
       display: flex;
@@ -3075,115 +3083,70 @@ video {
       gap: 10px;
       .num {
         color: #27ae60;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        transform: translateY(50%);
-      }
-      .lan_num {
-        background-color: rgba(27, 27, 29, 0.8);
-        z-index: 4;
-      }
-      .lan_num:hover {
-        background-color: rgba(49, 38, 53, 0.2);
       }
       .status-bar {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: transparent !important; */
-        height: 50px;
-        box-shadow: var(--box--shadow-2) !important;
-        border-radius: 100%;
-        /* Set border-radius to 50% for a perfect circle */
-        width: 50px;
-        .lan_num {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center !important;
-        }
+        background-color: var(--color--grey-5);
+        height: 0.5rem;
+        box-shadow: var(--box--shadow-2);
+        border: 1px solid var(--color--grey-3);
+        border-radius: 4px;
+        width: 85%;
+        z-index: -2;
         .htm {
           display: block;
           position: relative;
-          z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
+          background-color: var(--color--secondary);
+          box-shadow: var(--box--shadow-2);
+          z-index: 10;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
+          border-radius: 4px;
+          width: 85%;
         }
         .css {
           display: block;
           position: relative;
+          background-color: var(--color--secondary);
           z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
+          width: 70%;
+          border-radius: 4px;
         }
         .javascript {
           display: block;
           position: relative;
+          background-color: var(--color--secondary);
           z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
+          width: 65%;
+          border-radius: 4px;
         }
         .bot {
           display: block;
           position: relative;
+          background-color: var(--color--secondary);
           z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
+          width: 70%;
+          border-radius: 4px;
         }
         .github {
           display: block;
           position: relative;
+          background-color: var(--color--secondary);
           z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
+          width: 50%;
+          border-radius: 4px;
         }
         .git {
           display: block;
           position: relative;
+          background-color: var(--color--secondary);
           z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
           height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
-        }
-        .tailwind {
-          display: block;
-          position: relative;
-          z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
-          height: 100%;
-          border: 1.4px solid var(--color--secondary);
-          border-radius: 100%;
-        }
-        .react {
-          display: block;
-          position: relative;
-          z-index: 2;
-          box-shadow: var(--box--shadow-2) !important;
-          width: 100%;
-          height: 100%;
-          border: 1.4px solid red;
-          border-radius: 100%;
+          width: 55%;
+          border-radius: 4px;
         }
       }
     }
@@ -3255,14 +3218,15 @@ video {
 
 .run {
   text-align: center;
-  color: #333;
+  color: rgb(51, 51, 51);
 }
 
 .geek {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 240 250 / var(--tw-bg-opacity));
+  background-color: rgba(237,240,250,0.9);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -3303,6 +3267,11 @@ video {
     flex-direction: row;
     row-gap: 0px;
   }
+}
+
+.gchild {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .compny {
@@ -3386,7 +3355,13 @@ textarea {
 
 .slieShow {
   box-shadow: var(--box--shadow-2);
+  overflow: hidden;
 }
+
+/* 
+.slieShowcon {
+  
+} */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -3469,6 +3444,10 @@ textarea {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-serve:hover {
+  background-color: rgba(51, 51, 51,0.8);;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3505,6 +3484,11 @@ textarea {
 @media (min-width: 768px) {
   .md\:row-span-2 {
     grid-row: span 2 / span 2;
+  }
+
+  .md\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
   .md\:mt-10 {
@@ -3544,11 +3528,11 @@ textarea {
   }
 
   .md\:h-grid2 {
-    height: 500px;
+    height: 800px;
   }
 
   .md\:h-grid3 {
-    height: 400px;
+    height: 500px;
   }
 
   .md\:h-ppa {
@@ -3559,8 +3543,12 @@ textarea {
     width: 50%;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:w-sfat {
-    width: 400px;
+    width: 280px;
   }
 
   .md\:grid-cols-2 {
@@ -3579,6 +3567,10 @@ textarea {
     flex-direction: row;
   }
 
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -3589,11 +3581,6 @@ textarea {
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:gap-x-14 {
-    -moz-column-gap: 3.5rem;
-         column-gap: 3.5rem;
   }
 
   .md\:gap-x-16 {
@@ -3610,19 +3597,14 @@ textarea {
     row-gap: 0px;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .md\:px-7 {

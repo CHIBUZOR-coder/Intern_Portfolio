@@ -7,11 +7,11 @@ module.exports = {
         big_h: "20rem",
         ppa: "47vh",
         grid: "900px",
-        grid2: "500px",
-        grid3: "400px",
+        grid2: "800px",
+        grid3: "500px",
         smgrid: "3500px",
         smgrid2: "2200px",
-        smgrid3: "1300px",
+        smgrid3: "1450px",
         contactl: "500px",
       },
       margin: {
@@ -20,8 +20,10 @@ module.exports = {
       },
       width: {
         fat: "450px",
-        sfat: "400px",
+        fat2: "500px",
+        sfat: "280px",
         smfat: "300px",
+
         ssfat: "300px",
       },
       backgroundColor: {
@@ -43,9 +45,10 @@ module.exports = {
         serve4: "rgb(144,172,209)",
         serve5: "rgb(226,165,153)",
         serve6: "rgb(113,95,105)",
-        geek: "rgb(237,240,250)",
+        geek: "rgba(237,240,250,0.9)",
         geekhover: "rgba(144,172,209,2)",
         contact: "rgb(228,84,71)",
+        serve: "rgba(51, 51, 51,0.8);",
       },
     },
   },

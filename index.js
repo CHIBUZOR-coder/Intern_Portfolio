@@ -4,7 +4,7 @@ const nav_text = document.querySelectorAll(".nav_text");
 const nav_home = document.querySelector(".nav_home");
 console.log(nav_home);
 const nav_about = document.querySelector(".nav_about");
-const nav_portfolio = document.querySelector(".nav_portfolio");
+
 const nav_service = document.querySelector(".nav_service");
 const nav_skill = document.querySelector(".nav_skill");
 const nav_timeline = document.querySelector(".nav_timeline");
@@ -24,7 +24,6 @@ const show_child = document.querySelectorAll(".show_child");
 const num = document.querySelectorAll(".num");
 const lan_num = document.querySelectorAll(".lan_num");
 const geek = document.querySelectorAll(".geek");
-
 
 hbtn.addEventListener("click", () => {
   if (nav_home.classList.contains("hidden")) {
@@ -69,29 +68,33 @@ document.addEventListener("DOMContentLoaded", function () {
   //   box[i].style.backgroundColor = secondaryColor;
   // }
 
-for (let i = 0; i < geek.length; i++) {
-  geek[i].addEventListener("mouseover", () => {
-    // Find the .compny elements inside the currently hovered .geek
-    const compnyElements = geek[i].querySelectorAll(".compny");
-     const companyElements = geek[i].querySelectorAll(".company");
-
-    for (let j = 0; j < compnyElements.length; j++) {
-      compnyElements[j].style.color = "white";
-       companyElements[j].style.color = "white";
-    }
-  });
-
-  geek[i].addEventListener("mouseout", () => {
-    // Find the .compny elements inside the currently hovered .geek
-    const compnyElements = geek[i].querySelectorAll(".compny");
+  for (let i = 0; i < geek.length; i++) {
+    geek[i].addEventListener("mouseover", () => {
+      // Find the .compny elements inside the currently hovered .geek
+      const compnyElements = geek[i].querySelectorAll(".compny");
       const companyElements = geek[i].querySelectorAll(".company");
+      const gchild = geek[i].querySelectorAll(".gchild");
 
-    for (let k = 0; k < compnyElements.length; k++) {
-      compnyElements[k].style.color = textColor;
-       companyElements[k].style.color = textColor;
-    }
-  });
-}
+      for (let j = 0; j < compnyElements.length; j++) {
+        compnyElements[j].style.color = "white";
+        companyElements[j].style.color = "white";
+        gchild[j].style.color = "white";
+      }
+    });
+
+    geek[i].addEventListener("mouseout", () => {
+      // Find the .compny elements inside the currently hovered .geek
+      const compnyElements = geek[i].querySelectorAll(".compny");
+      const companyElements = geek[i].querySelectorAll(".company");
+      const gchild = geek[i].querySelectorAll(".gchild");
+
+      for (let k = 0; k < compnyElements.length; k++) {
+        compnyElements[k].style.color = textColor;
+        companyElements[k].style.color = textColor;
+        gchild[k].style.color = textColor;
+      }
+    });
+  }
 
   for (let i = 0; i < btn.length; i++) {
     btn[i].style.color = primaryColor;
