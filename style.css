@@ -3543,8 +3543,8 @@ textarea {
     width: 50%;
   }
 
-  .md\:w-96 {
-    width: 24rem;
+  .md\:w-fattext {
+    width: 550px;
   }
 
   .md\:w-sfat {

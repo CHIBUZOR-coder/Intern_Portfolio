@@ -21,6 +21,7 @@ module.exports = {
       width: {
         fat: "450px",
         fat2: "500px",
+        fattext: "550px",
         sfat: "280px",
         smfat: "300px",
 
