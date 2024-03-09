@@ -85,6 +85,7 @@
     color: #787878;
 
 }
+
 /* 
 .picture{
     box-shadow: var(--box--shadow-2);
@@ -323,6 +324,7 @@
     background: url(images/gdesign.jpg) center center/ cover;
 
 }
+
 .child33 {
     background: url(images/cunsalt.jpg) center center/ cover;
 }
@@ -342,106 +344,106 @@
 
 /* Styling for timeline */
 
- .progress-container {
+.progress-container {
 
-     position: relative;
-     /* background-color: blueviolet; */
-     width: 100%;
-
-
-     .progress {
-         display: flex;
-         flex-direction: column;
-
-         .status-line {
-             position: relative;
-             display: flex;
-             width: 100%;
-             flex-direction: row;
-             align-items: center;
-             z-index: -1;
-             gap: 10px;
-
-             .num {
-                 color: #27ae60;
-             }
-
-             .status-bar {
-                 position: relative;
-                 background-color: var(--color--grey-5);
-                 height: 0.5rem;
-                 box-shadow: var(--box--shadow-2);
-                 border: 1px solid var(--color--grey-3);
-                 border-radius: 4px;
-                 width: 85%;
-                 z-index: -2;
+    position: relative;
+    /* background-color: blueviolet; */
+    width: 100%;
 
 
-                 .htm {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     box-shadow: var(--box--shadow-2);
-                     z-index: 10;
-                     height: 100%;
-                     border-radius: 4px;
-                     width: 85%;
-                 }
+    .progress {
+        display: flex;
+        flex-direction: column;
 
-                 .css {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     z-index: 2;
-                     height: 100%;
-                     width: 70%;
-                     border-radius: 4px;
-                 }
+        .status-line {
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            z-index: -1;
+            gap: 10px;
 
-                 .javascript {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     z-index: 2;
-                     height: 100%;
-                     width: 65%;
-                     border-radius: 4px;
-                 }
+            .num {
+                color: #27ae60;
+            }
 
-                 .bot {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     z-index: 2;
-                     height: 100%;
-                     width: 70%;
-                     border-radius: 4px;
-                 }
+            .status-bar {
+                position: relative;
+                background-color: var(--color--grey-5);
+                height: 0.5rem;
+                box-shadow: var(--box--shadow-2);
+                border: 1px solid var(--color--grey-3);
+                border-radius: 4px;
+                width: 85%;
+                z-index: -2;
 
-                 .github {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     z-index: 2;
-                     height: 100%;
-                     width: 50%;
-                     border-radius: 4px;
-                 }
 
-                 .git {
-                     display: block;
-                     position: relative;
-                     background-color: var(--color--secondary);
-                     z-index: 2;
-                     height: 100%;
-                     width: 55%;
-                     border-radius: 4px;
-                 }
-             }
-         }
-     }
- }
- 
+                .htm {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    box-shadow: var(--box--shadow-2);
+                    z-index: 10;
+                    height: 100%;
+                    border-radius: 4px;
+                    width: 85%;
+                }
+
+                .css {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    z-index: 2;
+                    height: 100%;
+                    width: 70%;
+                    border-radius: 4px;
+                }
+
+                .javascript {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    z-index: 2;
+                    height: 100%;
+                    width: 65%;
+                    border-radius: 4px;
+                }
+
+                .bot {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    z-index: 2;
+                    height: 100%;
+                    width: 70%;
+                    border-radius: 4px;
+                }
+
+                .github {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    z-index: 2;
+                    height: 100%;
+                    width: 50%;
+                    border-radius: 4px;
+                }
+
+                .git {
+                    display: block;
+                    position: relative;
+                    background-color: var(--color--secondary);
+                    z-index: 2;
+                    height: 100%;
+                    width: 55%;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
 
 .timeline2 {
 
@@ -525,29 +527,35 @@
 
 
 .geek {
-    @apply bg-geek hover:bg-gray-500 relative rounded-lg transition ease-in-out duration-700 flex flex-col 
+    @apply bg-geek hover:bg-gray-500 relative rounded-lg  flex flex-col transition ease-in-out duration-700
 }
 
 .gleekchild {
-    @apply top-10 right-10 w-44 h-12 bg-white rounded-full flex flex-col justify-center items-center
+    @apply  w-44 h-12 bg-white rounded-full flex flex-col justify-center items-center  relative
 }
 
 .gleekchild {
-    border: 1px solid black;
+    border: 1px solid black; 
+
 }
 
 .geekcontent {
     @apply flex justify-between gap-y-4 md:gap-y-0 p-6 flex-col md:flex-row
 }
 
-.gchild{
+.gchild {
     @apply px-6
 }
+
 .compny {
     @apply text-black font-bold text-lg
 }
 
 .hova {
+    @apply text-black font-bold text-sm 
+}
+
+.see {
     @apply text-black font-bold text-sm
 }
 
@@ -556,7 +564,32 @@
 }
 
 
+@keyframes animaMode {
+    from {
+        top: -4px;
+        opacity: 0;
 
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+
+    }
+} 
+
+
+ 
+.see {
+    /* display: none; */
+    position: absolute;
+    display: none;
+   animation-name: animaMode;
+   animation-duration: .1s;
+
+
+
+} 
 
 
 
@@ -566,13 +599,13 @@
 .btnn {
     border: 1px solid black;
 
-  
+
 }
 
-.btnn:hover{
+.btnn:hover {
 
-        border: 1px solid white;
-    
+    border: 1px solid white;
+
 }
 
 form {
@@ -637,11 +670,11 @@ textarea {
 
 }
 
- 
+
 .slieShow {
     box-shadow: var(--box--shadow-2);
     overflow: hidden;
-} 
+}
 
 
 /* 

@@ -3256,8 +3256,7 @@ video {
 }
 
 .gleekchild {
-  top: 2.5rem;
-  right: 2.5rem;
+  position: relative;
   display: flex;
   height: 3rem;
   width: 11rem;
@@ -3306,9 +3305,37 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.see {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .group {
   display: flex;
   flex-direction: column;
+}
+
+@keyframes animaMode {
+  from {
+    top: -4px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.see {
+  /* display: none; */
+  position: absolute;
+  display: none;
+  animation-name: animaMode;
+  animation-duration: .1s;
 }
 
 /* Styling contact */
@@ -3317,7 +3344,7 @@ video {
   border: 1px solid black;
 }
 
-.btnn:hover{
+.btnn:hover {
   border: 1px solid white;
 }
 

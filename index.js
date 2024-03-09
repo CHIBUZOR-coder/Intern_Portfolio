@@ -24,6 +24,10 @@ const show_child = document.querySelectorAll(".show_child");
 const num = document.querySelectorAll(".num");
 const lan_num = document.querySelectorAll(".lan_num");
 const geek = document.querySelectorAll(".geek");
+const hova = document.querySelectorAll(".nosee");
+const see = document.querySelector(".see");
+const gleekchild = document.querySelectorAll(".gleekchild");
+console.log(gleekchild);
 
 hbtn.addEventListener("click", () => {
   if (nav_home.classList.contains("hidden")) {
@@ -35,6 +39,40 @@ hbtn.addEventListener("click", () => {
   }
 });
 
+
+
+for (let i = 0; i < gleekchild.length; i++) {
+  gleekchild[i].addEventListener("mouseover", () => {
+    console.log("Mouseover event triggered");
+
+    // if (hova[i].classList.contains("hova")) {
+    //   console.log("true");
+    //   console.log("Removing hova, adding see");
+    //   hova[i].classList.remove("hova");
+    //   hova[i].classList.add("see");
+    // }
+    const geekhover = gleekchild[i].querySelector(".hova");
+    const geeksee = gleekchild[i].querySelector(".see");
+
+    geekhover.style.display = "none";
+    geeksee.style.display = "block";
+  });
+
+  gleekchild[i].addEventListener("mouseout", () => {
+    console.log("Mouseout event triggered");
+    // if (hova[i].classList.contains("see")) {
+    //   console.log("Removing see, adding hova");
+    //   hova[i].classList.remove("see");
+    //   hova[i].classList.add("hova");
+    // }
+
+     const geekhover = gleekchild[i].querySelector(".hova");
+     const geeksee = gleekchild[i].querySelector(".see");
+
+     geekhover.style.display = "block";
+     geeksee.style.display = "none";
+  });
+}
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
 
