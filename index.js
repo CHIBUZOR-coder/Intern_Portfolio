@@ -28,6 +28,9 @@ const hova = document.querySelectorAll(".nosee");
 const see = document.querySelector(".see");
 const gleekchild = document.querySelectorAll(".gleekchild");
 console.log(gleekchild);
+const carousel = document.querySelector(".carousel");
+const carousel_item = document.querySelectorAll(".carousel-item");
+const indicator = document.querySelectorAll(".indicator");
 
 hbtn.addEventListener("click", () => {
   if (nav_home.classList.contains("hidden")) {
@@ -38,8 +41,6 @@ hbtn.addEventListener("click", () => {
     nav_home.classList.remove("block");
   }
 });
-
-
 
 for (let i = 0; i < gleekchild.length; i++) {
   gleekchild[i].addEventListener("mouseover", () => {
@@ -66,11 +67,11 @@ for (let i = 0; i < gleekchild.length; i++) {
     //   hova[i].classList.add("hova");
     // }
 
-     const geekhover = gleekchild[i].querySelector(".hova");
-     const geeksee = gleekchild[i].querySelector(".see");
+    const geekhover = gleekchild[i].querySelector(".hova");
+    const geeksee = gleekchild[i].querySelector(".see");
 
-     geekhover.style.display = "block";
-     geeksee.style.display = "none";
+    geekhover.style.display = "block";
+    geeksee.style.display = "none";
   });
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -153,4 +154,76 @@ document.addEventListener("DOMContentLoaded", function () {
       nav_text[i].style.color = textColor;
     });
   }
+
+   
 });
+
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+   let slideIndex = 1;
+   let touchStartX = 0;
+   let touchEndX = 0;
+
+   const slides = document.getElementById("carousel");
+   const indicators = document.querySelectorAll(".indicator");
+
+   slides.addEventListener("touchstart", (e) => {
+     touchStartX = e.touches[0].clientX;
+   });
+
+   slides.addEventListener("touchend", (e) => {
+     touchEndX = e.changedTouches[0].clientX;
+     handleSwipe();
+   });
+
+   indicators.forEach((indicator, index) => {
+     indicator.addEventListener("click", () => {
+       currentSlide(index + 1);
+     });
+   });
+
+   function handleSwipe() {
+     const swipeThreshold = 50;
+
+     if (touchStartX - touchEndX > swipeThreshold) {
+       // Swipe left
+       slideIndex++;
+     } else if (touchEndX - touchStartX > swipeThreshold) {
+       // Swipe right
+       slideIndex--;
+     }
+
+     showSlides();
+   }
+
+   function showSlides() {
+     if (slideIndex > slides.children.length) {
+       slideIndex = 1;
+     }
+
+     if (slideIndex < 1) {
+       slideIndex = slides.children.length;
+     }
+
+     slides.style.transform = `translateX(${-100 * (slideIndex - 1)}%)`;
+
+     indicators.forEach((indicator, index) => {
+       indicator.classList.remove("active");
+       if (index === slideIndex - 1) {
+         indicator.classList.add("active");
+       }
+     });
+   }
+
+   function currentSlide(index) {
+     slideIndex = index;
+     showSlides();
+   }
+
+   setInterval(() => {
+     slideIndex++;
+     showSlides();
+   }, 3000);
+ });

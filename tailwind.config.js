@@ -22,6 +22,7 @@ module.exports = {
         fat: "450px",
         fat2: "500px",
         fattext: "550px",
+        slide: "130vw",
         sfat: "280px",
         smfat: "300px",
 

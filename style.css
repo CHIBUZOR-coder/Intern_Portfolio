@@ -2167,9 +2167,9 @@ video {
   padding-right: 1rem;
 }
 
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-1 {
@@ -3338,6 +3338,15 @@ video {
   animation-duration: .1s;
 }
 
+/* 
+styling slids */
+
+.slide {
+  position: relative;
+  height: 20rem;
+  width: 130vw;
+}
+
 /* Styling contact */
 
 .btnn {
@@ -3405,6 +3414,116 @@ textarea {
 .slieShowcon {
   
 } */
+
+/* 
+
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+   
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+
+}
+
+.indicators-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active,
+.indicator:hover {
+    background-color: #3498db;
+   
+} */
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  /* 50% of the viewport height */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  height: 60vh;
+  /* 50% of the viewport height */
+}
+
+.indicators-container {
+  text-align: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active,
+.indicator:hover {
+  background-color: #3498db;
+  /* Change this color to a noticeable one */
+}
+
+.caronum {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.caroname {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.caronum {
+  position: absolute;
+  top: 0.75rem;
+}
 
 @media (min-width: 640px) {
   .sm\:container {

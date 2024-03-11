@@ -527,15 +527,15 @@
 
 
 .geek {
-    @apply bg-geek hover:bg-gray-500 relative rounded-lg  flex flex-col transition ease-in-out duration-700
+    @apply bg-geek hover:bg-gray-500 relative rounded-lg flex flex-col transition ease-in-out duration-700
 }
 
 .gleekchild {
-    @apply  w-44 h-12 bg-white rounded-full flex flex-col justify-center items-center  relative
+    @apply w-44 h-12 bg-white rounded-full flex flex-col justify-center items-center relative
 }
 
 .gleekchild {
-    border: 1px solid black; 
+    border: 1px solid black;
 
 }
 
@@ -552,7 +552,7 @@
 }
 
 .hova {
-    @apply text-black font-bold text-sm 
+    @apply text-black font-bold text-sm
 }
 
 .see {
@@ -576,20 +576,32 @@
         opacity: 1;
 
     }
-} 
+}
 
 
- 
+
 .see {
     /* display: none; */
     position: absolute;
     display: none;
-   animation-name: animaMode;
-   animation-duration: .1s;
+    animation-name: animaMode;
+    animation-duration: .1s;
 
 
 
-} 
+}
+
+
+
+
+/* 
+styling slids */
+.slide {
+    @apply w-slide h-80 relative
+}
+
+
+
 
 
 
@@ -681,3 +693,111 @@ textarea {
 .slieShowcon {
   
 } */
+
+
+/* 
+
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+   
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+
+}
+
+.indicators-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active,
+.indicator:hover {
+    background-color: #3498db;
+   
+} */
+
+
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    /* 50% of the viewport height */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    /* 50% of the viewport height */
+}
+
+.indicators-container {
+    text-align: center;
+  
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active,
+.indicator:hover {
+    background-color: #3498db;
+    /* Change this color to a noticeable one */
+}
+
+.caronum {
+    @apply text-4xl
+}
+
+.caroname {
+    @apply font-bold text-3xl
+}
+
+.carousel-item {
+    @apply flex flex-col justify-center items-center
+}
+
+.caronum {
+    @apply absolute top-3
+}
